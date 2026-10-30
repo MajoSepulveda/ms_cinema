@@ -9,7 +9,7 @@ const dataSource = new DataSource({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
   entities: ['src/**/*.entity{.ts,.js}', 'dist/**/*.entity.js'],
-  migrations: ['src/migrations/*{.ts,.js}', 'dist/migrations/*.js'],
+  migrations: ['src/migrations/*.ts'],
   synchronize: false,
 });
 
